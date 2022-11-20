@@ -1,0 +1,186 @@
+
+version: 2
+
+models:
+  - name: base_pdo_raw_export
+    description: "Base table that sits on top of the snapshot of the pdo_raw_export table to provide the freshest freshness"
+    columns:
+    - name: Title
+      description: The application number provided by the utilities in their project management data.
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+      tests:
+        - not_null
+
+    - name: EvaluationYear
+      description: The expected evaluation year for the project.
+      meta: 
+        Security Category: N/A
+        Contains PII: No      
+
+    - name: EVSP_x0020__x0028_For_x0020_Anal
+      description: The EVSP that will be used for analysis. This is either the EVSP provided by the utility, or the EVSP provided via manual entry in the sharepoint list.
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: field_1
+      description: The EVSP observed and provided through the sharepoint list, manually, by Energetics staff.
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: evsp_utility
+      description: The EVSP provided automatically from utility PMO data.
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: evsp_utility
+      description: The EVSP provided automatically from utility PMO data.
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: field_2
+      description: The project was invoiced as of 12/31/2021.
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: field_3
+      description: The project was activated as of 12/31/2021.
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: field_4
+      description: Project Marget Segment (Market Segment | Market Subsegment | Fuel Type)
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: field_5
+      description: Utility program name
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: field_6
+      description: Utility name
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: field_7
+      description: Business Name
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: field_8
+      description: Business Type
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: field_9
+      description: Count of chargers located on site
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: field_10
+      description: Types of chargers located onsite at the project
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: field_11
+      description: Notes columns
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: Date_x0020_of_x0020_Site_x0020_V
+      description: Date (planned or actual) of site visit
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: SiteVisitRound
+      description: The round of the site visit. This is largely Energetics internal use.
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: ID
+      description: Unique ID related to the row entry
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: ContentTypeId
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+    
+    - name: Modified
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: Created
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: AuthorId
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: EditorId
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: OData__UIVersionString
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: Attachments
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: GUID
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: ComplianceAssetId
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: utility_calced
+      description: Calculated column based on utility name
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+
+
+  

@@ -1,0 +1,154 @@
+
+version: 2
+
+models:
+  - name: base_evsp_raid_log
+    description: "Base table that sits on top of the snapshot of the evsp_raid_log table to provide the freshest freshness"
+    columns:
+    
+    - name: ID
+      description: Unique ID related to the row entry
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+    
+    - name: Title
+      description: A Title for the ticket, combining the row ID and the application id.
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+      
+
+    - name: ContentTypeId
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+    
+    - name: Modified
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: Created
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: AuthorId
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: EditorId
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: OData__UIVersionString
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: Attachments
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: GUID
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: ComplianceAssetId
+      description: Sharepoint metadata column
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: ProjectNumberId
+      description: An integer that links the RAID Log entry back to a project from the PDO table
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: RAIDCategory
+      description: Is this entry a Risk, Assumption, Issue, and Dependencie
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: Impact
+      description: Potential impact of the item
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: Status
+      description: Status of the item. Has the item been resolbe, still open, etc.
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+    
+    - name: ActionCategory
+      description: What general type of action is needed to resolve the Item
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: IssueReportedBy
+      description: Who reported the item
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: StartDate
+      description: Estimated start date of the item
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: EndDate
+      description: Estimated end date of the item
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: IssueDescription
+      description: A short description of the item
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: IssueIdentifiedDate
+      description: The date the item was identified
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: Owner_x002f_Assignee
+      description: Who owns the resolution of the item
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+    - name: Observations
+      description: Short narative on Observations
+      meta: 
+        Security Category: N/A
+        Contains PII: 
+        
+    - name: Observations
+      description: Short narative on Final resolution
+      meta: 
+        Security Category: N/A
+        Contains PII: No
+
+

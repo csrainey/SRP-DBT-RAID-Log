@@ -1,0 +1,1 @@
+select * from {{source('base_crud','pdo_raw_export')}}

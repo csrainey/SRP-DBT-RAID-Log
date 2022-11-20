@@ -1,0 +1,11 @@
+
+version: 2
+
+sources:
+  - name: base_crud
+    schema: base_crud
+    tables:
+      - name: pdo_raw_export
+        description: "mirrored copy of the PRoject Data Observed Sharepoint list"
+      - name: evsp_raid_log
+        description: "mirrored copy of the EVSP RAID Log Sharepoint list"

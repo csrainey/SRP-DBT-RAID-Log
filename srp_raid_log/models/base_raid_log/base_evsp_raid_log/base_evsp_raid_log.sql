@@ -1,0 +1,1 @@
+select * from {{source('base_crud','evsp_raid_log')}}

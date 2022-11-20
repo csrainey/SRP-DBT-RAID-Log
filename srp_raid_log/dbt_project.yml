@@ -34,5 +34,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   srp_raid_log:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    base_raid_log:
       +materialized: view
+      +schema: base_raid_log   
+    int_raid_log:
+      +materialized: view
+      +schema: int_raid_log 
