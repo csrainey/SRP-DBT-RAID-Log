@@ -8,12 +8,13 @@ SELECT a.ID
       ,a.[Status] as status
       ,a.[ActionCategory] as action_category
       ,a.[IssueReportedBy] as issue_reported_by
-      ,a.[StartDate] as start_dateS
-      ,a.[EndDate] as end_date
+      ,cast(cast(a.[StartDate]  as datetime) as date) as start_date
+      ,cast(cast(a.[EndDate] as datetime) as date) as end_date
+      ,cast(a.[Issue_x0020_Category] as varchar(1024)) as issue_category
       ,a.[IssueDescription] as issue_description
-      ,a.[IssueIdentifiedDate] as issue_identification_date
+      ,cast(cast( a.[IssueIdentifiedDate] as datetime) as date) as issue_identification_date
       ,a.[Owner_x002f_Assignee] as owner_or_assignee
-      ,a.[IssueResolvedDate] as issue_resolved_date
+      ,cast(cast(a.[IssueResolvedDate] as datetime) as date) as issue_resolved_date
       ,a.[Observations] as observations
       ,a.[FinalResolution] as final_resolution
   FROM {{ref('base_evsp_raid_log')}} a

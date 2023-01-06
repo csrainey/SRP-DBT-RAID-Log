@@ -40,3 +40,6 @@ models:
     int_raid_log:
       +materialized: view
       +schema: int_raid_log 
+    prod_raid_log:
+      +materialized: view
+      +schema: utility_mart

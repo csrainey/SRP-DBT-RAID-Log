@@ -1,0 +1,1 @@
+select * from {{ref('int_raid_log')}}
